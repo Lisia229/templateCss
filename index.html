@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
@@ -16,7 +18,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" href="./icon/icons8-bt21-tata-48.png">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Macup</title>
 </head>
 
 <body>
@@ -35,34 +39,36 @@
         id="headerimg05" alt="">
       <!--  -->
       <div class="row justify-space-between">
-        <div class="col ">
+        <div class="col" data-aos="flip-left" data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/logo.svg">
         </div>
-        <div class="col align-self-center text-align-right">
+        <div class="col align-self-center text-align-right" data-aos="flip-right" data-aos-duration="1500">
           <span class="tel-font-size">+1 (495) 642-57-79</span>
         </div>
+        <!-- ! 漢堡選單 -->
         <div class="col-100">
           <input type="checkbox" name="menu-switcher" id="menu-switcher">
           <label for="menu-switcher" class="hamburger">
-            <img src="./icon/menu.png" alt="">
+            <img src="./icon/menu.png" id="menuimg">
           </label>
           <ul class="menu">
             <li><a href="#"><span>HOME</span></a></li>
-            <li><a href="#"><span>ABOUT</span> </a></li>
-            <li><a href="#"><span>PRICING</span></a></li>
-            <li><a href="#"><span>Portfolio</span></a></li>
-            <li><a href="#"><span>faq</span></a></li>
-            <li><a href="#"><span>contact</span></a></li>
+            <li><a href="./template/about.html"><span>ABOUT</span> </a></li>
+            <li><a href="./template/pricing.html"><span>PRICING</span></a></li>
+            <li><a href="./template/protifolo.html"><span>Portfolio</span></a></li>
+            <li><a href="./template/faq.html"><span>faq</span></a></li>
+            <li><a href="./template/contact.html"><span>contact</span></a></li>
           </ul>
           <ul id="menu">
             <li><a href="#"><span class="underline">HOME</span></a></li>
-            <li><a href="#"><span>ABOUT</span> </a></li>
-            <li><a href="#"><span>PRICING</span></a></li>
-            <li><a href="#"><span>Portfolio</span></a></li>
-            <li><a href="#"><span>faq</span></a></li>
-            <li><a href="#"><span>contact</span></a></li>
+            <li><a href="./template/about.html"><span>ABOUT</span> </a></li>
+            <li><a href="./template/pricing.html"><span>PRICING</span></a></li>
+            <li><a href="./template/protifolo.html"><span>Portfolio</span></a></li>
+            <li><a href="./template/faq.html"><span>faq</span></a></li>
+            <li><a href="./template/contact.html"><span>contact</span></a></li>
           </ul>
         </div>
+
       </div>
     </div>
     <div id="content">
@@ -82,50 +88,69 @@
       <div id="container2" class="row">
         <div class="col-100 mg-b pd-10 box-sizing "></div>
         <div class="col-100 mg-b pd-10">
-          <span class="capital"># Who I am</span>
+          <span class="capital" data-aos="fade-right"># Who I am</span>
         </div>
-        <div class="col-100 mg-b pd-10">
+        <div class="col-100 mg-b pd-10" data-aos="flip-right" data-aos-duration="1500">
           <span class="capital2">
             Welcome To <br>
             My Personal <br>
             Makeup Artistry!</span>
         </div>
-        <div class="col-30 mg-b-10 mg-t-10 pd-10">
-          <span class="capital3"># FACT 01</span>
+        <div class="col-30 mg-b-10 mg-t-10 pd-10 text-align-center02">
+          <span class="capital3 "># FACT 01</span>
         </div>
         <div class="col-70 mg-b-30 pd-10">
-          <span class="capital4">Our team of beauty experts will make your “getting ready” process much easier by
+          <span class="capital4-1-2">Our team of beauty experts will make your “getting ready” process much easier by
             providing hair and makeup at the convenience of your location and at a time that works for you.</span>
+          <span class="capital4-2">Our team of beauty experts will make your <br> “getting ready” process much easier by
+            <br>
+            providing hair and makeup at the convenience of your location and at a time <br> that works for you.</span>
         </div>
-        <div class="col-100 mg-b pd-10">
+        <div class="col-100 mg-b pd-10 posistion-relative">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-6.jpg"
-            alt="" class="attachment-full size-full">
+            alt="" class="attachment-full size-full" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+          <div id="container02-btn" class="align-self-center" data-aos="fade-left" data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
+            <span class="center">Best Service</span>
+          </div>
         </div>
         <!-- 圖2 -->
-        <div class="col-30 mg-b-10 mg-t-10 pd-10 container02-col-30">
+        <div class="col-30 mg-b-10 mg-t-10 pd-10 container02-col-30 container02-lg-30 text-center02">
           <span class="capital3"># FACT 02</span>
         </div>
-        <div class="col-70 mg-b-30 pd-10 container02-col-70">
+        <div class="col-70 mg-b-30 pd-10 container02-col-70 container02-lg-30" data-aos="fade-down-left"
+          data-aos-duration="1500" data-aos-delay="500">
           <span class="capital4">We are honored to receive the Best Wedding Make Up 2019 Award for the eighth year in a
             row! Our artistry demonstrates excellence in quality, service, responsiveness and professionalism.</span>
         </div>
-        <div class="col-30 mg-b-10 mg-t-10 pd-10 container02-col-100">
+        <div class="container02-col-70 container-none-02"></div>
+        <div class="container02-col-30 container02-lg-33 text-right-lg">
           <img id="fact02img"
             src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-7.jpg" alt="">
         </div>
-        <div class="col-100 mg-b pd-10 container02-col-50">
+        <div class="col-100 mg-b pd-10 container02-col-50" data-aos="fade-up-right" data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-8.jpg"
             alt="" class="attachment-full size-full">
         </div>
         <!-- 圖3 -->
-
-        <div class="col-30 mg-b-10 mg-t-10 pd-10">
-          <span class="capital3"># FACT 03</span>
-        </div>
-        <div class="col-70 mg-b-30 pd-10">
-          <span class="capital4">Our goal is for our clients to feel like the best version of themselves, be it for
-            their wedding day, a special event, or for everyday. We will help you achieve your desired outcome…to look
-            and feel beautifully you.</span>
+        <div class="container02-col-50 posistion-relative">
+          <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-9.jpg"
+            id="container02img" alt="">
+          <div class="row flex-column flex-column-lg">
+            <div class="col-30 mg-b-10 mg-t-10 pd-10 col-40-lg">
+              <span class="capital3"># FACT 03</span>
+            </div>
+            <div class="col-70 mg-b-30 pd-10 col-60-lg">
+              <div class="text-content02">
+                <span class="capital4">Our goal is for our clients to feel like the best version of themselves, be it
+                  for
+                  their wedding day, a special event, or for everyday. We will help you achieve your desired outcome…to
+                  look
+                  and feel beautifully you.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="container3" class="row">
@@ -281,19 +306,20 @@
           </h3>
         </div>
         <!-- 圖片一 -->
-        <div class="col-100 container05-col-50 containerpr">
+        <div class="col-100 container05-col-50 containerpr" data-aos="flip-right" data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-10.jpg"
             class="img-5">
           <p class="text-5-2">Spring Makeup</p>
         </div>
         <!-- 圖片二 -->
-        <div class="col-100 container05-col-50 containerpl">
+        <div class="col-100 container05-col-50 containerpl" data-aos="flip-left" data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-11.jpg"
             class="img-5">
           <p class="text-5-2">Groups Makeup</p>
         </div>
         <!-- 圖片三 -->
-        <div class="col-100 col-100-lg-5 posistion-relative">
+        <div class="col-100 col-100-lg-5 posistion-relative" data-aos-delay="500" data-aos="fade-up"
+          data-aos-duration="1500">
           <div id="container05-btn" class="align-self-center">
             <span class="center">Best Service</span>
           </div>
@@ -302,13 +328,15 @@
           <p class="text-5-2">Editorial Makeup</p>
         </div>
         <!-- 圖片四 -->
-        <div class="col-100 container05-col-50 containerpr">
+        <div class="col-100 container05-col-50 containerpr" data-aos-delay="1000" data-aos="fade-up-right"
+          data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-13.jpg"
             class="img-5">
           <p class="text-5-2">Cinema Makeup</p>
         </div>
         <!-- 圖片五 -->
-        <div class="col-100 container05-col-50 containerpl">
+        <div class="col-100 container05-col-50 containerpl" data-aos-delay="1000" data-aos="fade-up-left"
+          data-aos-duration="1500">
           <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-14.jpg"
             class="img-5">
           <p class="text-5-2">Shooting Makeup</p>
@@ -328,20 +356,54 @@
           <p class="text-5" style="color:#586973"># TESTIMONIALS</p>
         </div>
         <div class="col-100 mg-t-10 mg-b-10 align-self-center posistion-relative">
-          <div id="gallery">
-            <div id="imgs">
-              <!-- 將圖片都包在一起 -->
-              <img src="https://upload.wikimedia.org/wikipedia/zh/e/e7/Chainsaw_Man_Volume_1_Cover.jpg" alt="">
-              <img src="https://p2.bahamut.com.tw/B/2KU/59/3981f5f7d4664823be8d8716941ic7v5.JPG" alt="">
-              <img
-                src="https://kbimages1-a.akamaihd.net/eb13b4f0-f971-4ff5-8762-79f0c2a2eadb/1200/1200/False/4Xi-PrGTpjCwG6p2jSGsUQ.jpg"
-                alt="">
-              <img src="https://cdn.readmoo.com/cover/60/9076g46_460x580.jpg?v=1628215473" alt="">
-              <img src="https://image.gamebase.com.tw/gb_img/8/004/222/4222768.jpg" alt="">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://daione.com/wp-content/uploads/2022/04/%E7%BE%8E%E5%A6%9D%E7%B6%B2%E7%B4%851-1024x683.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://daione.e.webweb.today/wp-content/uploads/2022/04/%E7%BE%8E%E5%A6%9D%E7%B6%B2%E7%B4%852.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://atiip.atri.org.tw/Utility/ShowAbstractFD.aspx?contentguid=ddf9e069-be8d-4401-bb1e-5a864c33772e&attf_fileguid=69c17311-ed52-44fc-91ce-06eef9e22a26&contenttype=rpt"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2022/07/28/realtime/18159735.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600"
+                  alt="">
+              </div>
+              <div class="swiper-slide"> <img
+                  src="https://r3r5h7v2.rocketcdn.me/wp-content/uploads/2022/10/shutterstock_548156077.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.winnews.com.tw/wp-content/uploads/2022/10/momo%E9%80%B1%E6%9C%9F%E8%B3%BC%E5%AE%A3%E5%B8%83%E6%94%9C%E6%89%8B%E5%85%A8%E7%90%83%E6%99%82%E5%B0%9A%E5%BD%A9%E5%A6%9D%E6%AC%8A%E5%A8%81%E3%80%8CM.A.C%E3%80%8D%E6%8E%A8%E5%87%BA11%E6%9C%88%E3%80%8CBeauty-Box%E7%BE%8E%E5%A6%9D%E7%A6%AE%E7%9B%92%E3%80%8D%E5%B0%8F%E7%B2%89%E7%9B%92%EF%BC%8C%E5%B0%87%E6%96%BC11%EF%BC%8F1%E5%BC%B7%E5%8B%A2%E9%96%8B%E8%B3%A3%EF%BC%81.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://cdn02.pinkoi.com/wp-content/uploads/sites/7/2022/01/18105626/shutterstock_1591217902.webp"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://www.i-buzz.com.tw/uploads/industry_img/1650874530.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://daione.com/wp-content/uploads/2022/04/%E7%BE%8E%E5%A6%9D%E7%B6%B2%E7%B4%851-1024x683.jpg"
+                  alt="">
+              </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-          <input type="button" value="&lt;" id="left">
-          <input type="button" value="&gt;" id="right">
         </div>
       </div>
       <div id="container7" class="row">
@@ -352,7 +414,7 @@
             <p class="text-7-1">Do You Have Any Questions?</p>
             <p class="text-7-3">Do You Have Any <br>
               Questions?</p>
-            <p class="text-7-5">Do You Have <br> Any Questions?</p>
+            <p class="text-7-5" data-aos="zoom-out-down" data-aos-duration="1500">Do You Have <br> Any Questions?</p>
           </div>
           <div class="col-100 mg-b">
             <p class="text-7-4">178 West 27th Street, Suite 527, New York NY 10012, United States
@@ -382,7 +444,8 @@
                   alt="" class="parallax">
               </div>
               <img src="https://ld-wp73.template-help.com/monstroid2/skins/makeup/wp-content/uploads/2020/04/img-16.jpg"
-                alt="" class="parallax2">
+                alt="" class="parallax2" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500">
             </div>
           </div>
         </div>
@@ -394,7 +457,7 @@
           </h3>
         </div>
         <!-- 圖片一 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -404,7 +467,7 @@
           </a>
         </div>
         <!-- 圖片二 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -414,7 +477,8 @@
           </a>
         </div>
         <!-- 圖片三 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="1000">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -424,7 +488,8 @@
           </a>
         </div>
         <!-- 圖片四 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="1500">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -434,7 +499,8 @@
           </a>
         </div>
         <!-- 圖片五 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="2000">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -444,7 +510,8 @@
           </a>
         </div>
         <!-- 圖片六 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="2500">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -454,7 +521,8 @@
           </a>
         </div>
         <!-- 圖片七 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="2800">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -464,7 +532,8 @@
           </a>
         </div>
         <!-- 圖片八 -->
-        <div class="col-100 pd-10 col-50-8 container8">
+        <div class="col-100 pd-10 col-50-8 container8" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="3000">
           <a href="#" class="display-block">
             <div class="smaller-container">
               <img
@@ -539,12 +608,41 @@
     </div>
   </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'
-    integrity='sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=='
-    crossorigin='anonymous'></script>
-  <script src="./js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./Gsap/gsap.js"></script>
+  <script>
+    AOS.init();
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 
+    //- 漢堡圖片切換
+    let menu = true;
+    $('#menu-switcher').on('click', function () {
+      if (menu) {
+        $('#menuimg').attr('src', './icon/cancel.png')
+      } else {
+        $('#menuimg').attr('src', './icon/menu.png')
+      }
+      menu = !menu
+    })
+
+
+
+  </script>
 </body>
 
 </html>

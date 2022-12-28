@@ -1,0 +1,137 @@
+#aboutme {
+  width: 100%;
+  background: #816d3b;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding: 10px;
+}
+
+.mystory {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'Rozha One', Sans-serif;
+  line-height: 1em;
+  text-align: center;
+}
+
+.aboutme {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'Rozha One', Sans-serif;
+  line-height: 1em;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.aboutImg {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.whoiam {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'Rozha One', Sans-serif;
+  line-height: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.professional {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'Rozha One', Sans-serif;
+  line-height: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about-1 {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'League Spartan', sans-serif;
+  line-height: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+#aboutlist ul li {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: #c0c2dd;
+  font-family: 'League Spartan', sans-serif;
+  line-height: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#aboutlist ul {
+  list-style: disc;
+}
+
+@media (min-width: 768px) {
+  .col-50 {
+    width: 50%;
+  }
+  .flex{
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .aboutme-1{
+    width: 100%;
+  }
+
+    .col-50 {
+    width: 50%;
+  }
+
+  .aboutme-1{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .whoiam {
+    font-size: 4.5rem;
+  }
+
+  .professional{
+    font-size: 3rem;
+  }
+}
